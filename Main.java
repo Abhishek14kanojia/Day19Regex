@@ -46,7 +46,7 @@ public class Main  extends Details{
 	public static void userPassword() {
 		System.out.println("Enter the your Password : ");
 		password = sc.next();
-		Details.vaildPassword(password); 
+		Details.vaildPassword(password);  
 	}
 	
 }
