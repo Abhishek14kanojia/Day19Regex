@@ -12,7 +12,7 @@ public class Main  extends Details{
 	static String email;
 	static String MobileNo;
 	static String password;
-	
+	static String AllEmails;
 	
 	public static void main(String[] args) {
 		System.out.println("welcome to the user registration problem");
@@ -21,6 +21,7 @@ public class Main  extends Details{
 		userEmail();
 		userMobileNo();
 		userPassword();
+		userAllEmails();
 	}
 
 	public static void userFirstname() {
@@ -48,5 +49,9 @@ public class Main  extends Details{
 		password = sc.next();
 		Details.vaildPassword(password);  
 	}
-	
+	public static void userAllEmails() {
+		System.out.println("Enter the your All Emails : ");
+		AllEmails = sc.next();
+		Details.vaildAllEmails(AllEmails);
+	}
 }
